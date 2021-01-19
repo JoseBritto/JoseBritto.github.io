@@ -1,0 +1,14 @@
+.dark-content{
+    color: white;
+}
+
+
+@media screen and (max-width: 736px) {
+
+    #header{
+        display: none;
+    }
+    body{
+        padding-top: 0;
+    }
+}
