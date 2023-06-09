@@ -1,0 +1,32 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.main-section-title{
+    align-self: flex-start;
+    margin-left: 10vw;
+}
+
+.main-section-title h2{
+    font-size: xx-large;
+}
+
+.main-section-title h3{
+    font-weight: unset;
+    margin: 4px;
+}
+br{
+    margin: 4px;
+}

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jose Britto</title>
+
+    <!--- Load Fonts --->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <!--- Load Fonts Done --->
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+
+    <!--- Load font awesome --->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+</head>
+<body>
+
+  <header>
+    <nav>
+        <a href="/">$ cd ~<span class="blinking-cursor"></span></a>
+        <span class="header_right">
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+        </span>
+    </nav>
+  </header>
+
+  <main>
+      <div class="intro">
+          <h1>Hello &#128075</h1>
+          <!--<h3>Welcome to my little site. Poke around to see what I'm upto.</h3>-->
+          <h3>My name's Britto. An amazing full-stack dev in the making.</h3>
+          <div class="icons">
+              <a class="las la-envelope" href="#"></a>
+              <a class="lab la-linkedin" href="https://www.linkedin.com/in/josebrittosaaji/"></a>
+              <a class="lab la-github" href="https://github.com/JoseBritto"></a>
+          </div>
+
+      </div>
+
+      <div class="scroll-hint">
+          <a href="#projects" class="las la-arrow-down"></a>
+      </div>
+  </main>
+  <div id="projects">
+      <section class="main-section-title">
+          <h2>Projects ...</h2>
+          <h3>Some awesome projects that I worked on</h3>
+      </section>
+
+      <div id="projects-display">
+
+          <div class="project-card" onclick="open_url('https://github.com/JoseBritto/BrainFuck')">
+            <div class="top">
+                <span class="project-logo"></span>
+                <h3># BrainFuck</h3>
+            </div>
+            <div class="bottom">
+                <p>An interpreter for the esoteric programming language "Brainfuck" created by Urban Müller in 1997.</p>
+                <ul>
+                    <li>Reads code from an input file</li>
+                    <li>Run code passed through stdin</li>
+                    <li>Outputs to stdout</li>
+                    <li>Supports pipes</li>
+                    <li>Created using C# and .Net 7</li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="project-card" onclick="open_url('https://github.com/JoseBritto/Moosic-Bot')">
+            <div class="top">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbE-IQnhu_kg4eNf1fmz2TSFNZzjIqm0mnpcb0LIc8SHUcCstLMR7639m8Z-b-ib41gno&usqp=CAU"
+                     alt="" width="60" class="project-logo project-logo">
+                <h3>Moosic</h3>
+            </div>
+            <div class="bottom">
+                <p>A discord bot that can play music all day long for you and your friends to enjoy.</p>
+                <ul>
+                    <li>Searches for music by name</li>
+                    <li>Supports custom playlists</li>
+                    <li>Plays spotify playlists</li>
+                    <li>Created using C# and .Net 7</li>
+                </ul>
+
+                <div class="ps">
+                    <span class="lab la-spotify"></span>
+                    <span class="lab la-youtube"></span>
+                    <span class="lab la-soundcloud"></span>
+                    <span class="lab la-discord"></span>
+                </div>
+
+            </div>
+          </div>
+
+
+          <div class="project-card" onclick="open_url('https://github.com/JoseBritto/Game-of-Life')">
+              <div class="top"
+                   style="background-image: url('assets/img/Conways_firework.gif')">
+                  <h3>Game of Life</h3>
+              </div>
+              <div class="bottom">
+                  <p>Recreation of the cellular automaton "Game of Life" by John Conway.</p>
+                  <ul>
+                      <li>0 player game</li>
+                      <li>Runs 100+ simulations per second</li>
+                      <li>Blah bla bla blah</li>
+                      <li>Created using C# and Unity</li>
+                  </ul>
+                  <!--
+                                  <div class="ps">
+                                      <span class="lab la-spotify"></span>
+                                      <span class="lab la-youtube"></span>
+                                      <span class="lab la-soundcloud"></span>
+                                  </div>-->
+
+              </div>
+          </div>
+
+
+          <div class="project-card" onclick="open_url('https://github.com/JoseBritto/Flappy-Bird')">
+            <div class="top">
+                <img src="assets/img/flappy-bird.png"
+                     alt="" width="80" class="project-logo project-logo">
+                <h3>Flappy</h3>
+            </div>
+            <div class="bottom">
+                <p>My shot at recreating the classic game of "Flappy Bird".</p>
+                <ul>
+                    <li>Collision detection</li>
+                    <li>Simple gravity & physics system</li>
+                    <li>Keeps track of the high score</li>
+                    <li>Created using C# and Unity</li>
+                </ul>
+<!--
+                <div class="ps">
+                    <span class="lab la-spotify"></span>
+                    <span class="lab la-youtube"></span>
+                    <span class="lab la-soundcloud"></span>
+                </div>-->
+
+            </div>
+          </div>
+
+
+
+      </div>
+  </div>
+
+
+  <div id="about">
+      <section class="main-section-title">
+          <h2>About me ... </h2>
+          <h3>Hi again &#128075</h3>
+      </section>
+      <section id="about-text">
+          I’m Jose Britto, a passionate and young developer always excited to learn new things.
+          Currently I'm in the process of refining my skills at George Brown College.
+          <br>
+          <br>
+          In the mean time I can say I'm good at the following things:
+
+          <ul>
+              <li>C# and .Net</li>
+              <li>HTML, CSS and javascript</li>
+              <li>The Unity game engine</li>
+              <li>SQL Databases</li>
+              <li>A little bit of Java and Python</li>
+              <li>Messing around with linux systems (especially Arch btw..)</li>
+              <li>Other essential tools like various package managers, ssh, bash, git, zsh etc...</li>
+          </ul>
+
+          So yeah, that’s it for now. I dont have anything more to say. <strong>Thanks for reading &#10084 </strong>
+          <br>
+          <br>
+        <!--  That was my very own protfolio website created completely from scratch. <em> Phew...</em>-->
+      </section>
+
+
+  </div>
+<!--Load scripts-->
+<script src="assets/js/navigator.js"></script>
+</body>
+</html>

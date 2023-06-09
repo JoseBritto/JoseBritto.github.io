@@ -1,0 +1,63 @@
+body{
+    background-color: #232425;
+    color: #A9A9B3;
+    font-family: 'Inter', sans-serif;
+}
+
+main{
+    height: 95vh;
+}
+main .intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 83vh;
+    width: 100vw;
+}
+
+main .intro h1{
+    font-size: 2.5em;
+    margin: 20px;
+}
+
+main .intro *{
+    margin: 10px;
+}
+main .intro h3{
+    margin: 10px;
+    font-weight: normal;
+    text-align: center;
+}
+
+main .intro .icons{
+    display: flex;
+    align-items: center;
+}
+main .intro .icons a{
+    font-size: 2em;
+    display: inline-block;
+    text-decoration: none;
+    color: unset;
+    margin-left: 10px;
+}
+
+main .scroll-hint{
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+}
+
+main .scroll-hint a{
+    color: unset;
+    text-decoration: none;
+    font-size: xxx-large;
+    opacity: 0.1;
+}
+main .scroll-hint a:hover{
+    opacity: 0.8;
+}

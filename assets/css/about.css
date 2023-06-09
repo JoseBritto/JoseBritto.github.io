@@ -1,0 +1,47 @@
+#about{
+    padding-top: 12vh;
+    margin-top: 2vh;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+}
+
+
+
+#about .section-title{
+    align-self: flex-start;
+    margin-left: 10vw;
+}
+
+#about .section-title h2{
+    font-size: xx-large;
+}
+
+#about .section-title h3{
+    font-weight: unset;
+    margin: 4px;
+}
+
+#about #about-text{
+    font-size: 1em;
+    margin-left: 11vw;
+    align-self: flex-start;
+    margin-top: 2vh;
+    max-width: 70vw;
+}
+#about .main-section-title>h3{
+    font-weight: 900;
+    margin-left: 1vw;
+    margin-top: 40px;
+}
+#about ul{
+    margin: 25px;
+}
+
+#about ul li{
+    margin: 5px;
+}
