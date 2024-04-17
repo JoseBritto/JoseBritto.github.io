@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/projects.css">
+    <link rel="stylesheet" href="assets/css/education.css">
     <link rel="stylesheet" href="assets/css/about.css">
 
     <!--- Load font awesome --->
@@ -31,7 +32,8 @@
     <nav>
         <a href="/">$ cd ~<span class="blinking-cursor"></span></a>
         <span class="header_right">
-            <a href="https://blog.britto.tech">Blogs &#129141;</a>
+            <a href="https://blog.britto.tech" target="_blank">Blogs &#129141;</a>
+            <a href="https://britto.tech/resume" target="_blank">Resume &#129141;</a>
             <a href="#projects">Projects</a>
             <a href="#about">About</a>
         </span>
@@ -68,7 +70,7 @@
 
       <div id="projects-display">
 
-          <div class="project-card" onclick="open_url('https://github.com/NickvisionApps/Denaro')">
+          <div tabindex="0" class="project-card" onclick="open_url('https://github.com/NickvisionApps/Denaro')">
             <div class="top">
                 <img  style="border-radius: 5px" src="https://nickvision.org/img/denaro.svg"
                      alt="" width="60" class="project-logo project-logo">
@@ -86,7 +88,7 @@
             </div>
           </div>
 
-          <div class="project-card" onclick="open_url('https://moosic.britto.tech/')">
+          <div  tabindex="0" class="project-card" onclick="open_url('https://moosic.britto.tech/')">
             <div class="top">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbE-IQnhu_kg4eNf1fmz2TSFNZzjIqm0mnpcb0LIc8SHUcCstLMR7639m8Z-b-ib41gno&usqp=CAU"
                      alt="" width="60" class="project-logo project-logo">
@@ -112,7 +114,7 @@
           </div>
 
 
-          <div class="project-card" onclick="open_url('https://github.com/JoseBritto/Game-of-Life')">
+          <div tabindex="0" class="project-card" onclick="open_url('https://github.com/JoseBritto/Game-of-Life')">
               <div class="top"
                    style="background-image: url('assets/img/Conways_firework.gif')">
                   <h3>Game of Life</h3>
@@ -136,7 +138,7 @@
           </div>
 
 
-          <div class="project-card" onclick="open_url('https://github.com/JoseBritto/Flappy-Bird')">
+          <div  tabindex="0" class="project-card" onclick="open_url('https://github.com/JoseBritto/Flappy-Bird')">
             <div class="top">
                 <img src="assets/img/flappy-bird.png"
                      alt="" width="80" class="project-logo project-logo">
@@ -165,6 +167,29 @@
       </div>
   </div>
 
+  <div id="education">
+      <section class="main-section-title">
+          <h2>Academics ...</h2>
+          <h3>Education and academic achievements</h3>
+      </section>
+      <section class="cards">
+          <div class="academic-card">
+              <div class="header">
+                <span class="title"><a href="https://www.georgebrown.ca/">George Brown College</a></span>
+                <span class="date">2023 - 2025</span>
+              </div>
+              <span class="subtitle">Computer Programming and Analysis Course</span>
+          </div>
+          <div class="academic-card">
+              <div class="header">
+                <span class="title"><a href="https://ieeextreme.org/ieeextreme-17-0-ranking/">IEEEXtreme 17.0</a></span>
+                <span class="date">October 2023</span>
+              </div>
+              <span class="subtitle">Ranked 8th in Canada as a team of three</span>
+          </div>
+      </section>
+  </div>
+  
 
   <div id="about">
       <section class="main-section-title">
@@ -173,23 +198,45 @@
       </section>
       <section id="about-text">
           I’m Jose Britto, a passionate and young developer always excited to learn new things.
+          I have a keen interest in knowing how various systems work on a very low level. I also love competitions.
+          <br>
           Currently I'm in the process of refining my skills at George Brown College.
           <br>
           <br>
-          In the mean time I can say I'm good at the following things:
+           In the mean time I can say I'm good at the following:
 
           <ul>
-              <li>C# and .Net</li>
-              <li>PHP and Python</li>
-              <li>HTML, CSS and javascript</li>
-              <li>The Unity game engine</li>
-              <li>SQL Databases</li>
-              <li>A little bit of Java and Python</li>
-              <li>Messing around with linux systems</li>
-              <li>Other essential tools like various package managers, ssh, bash, git, zsh etc...</li>
+              <li>
+                  <span class="name">Languages:</span>
+                  <span class="value">C#, Java, Python, Javascript, PHP, SQL</span>
+              </li>
+              <li>
+                  <span class="name">Frameworks:</span>
+                  <span class="value">.Net, React</span>
+              </li>
+              <li>
+                  <span class="name">Cloud Hosting:</span>
+                  <span class="value">AWS, Oracle Cloud</span>
+              </li>
+              <li>
+                  <span class="name">Game Engines:</span>
+                  <span class="value">Unity, Godot</span>
+              </li>
+              <li>
+                  <span class="name">Operating Systems:</span>
+                  <span class="value">Windows (desktop), Arch Linux (desktop), Debian/Ubuntu (server)</span>
+              </li>
+              <li>
+                  <span class="name">Other Tools:</span>
+                  <span class="value">Familiar with most of the standard tooling like git, bash, ssh, etc.</span>
+              </li>
           </ul>
 
-          So yeah, that’s it for now. I dont have anything more to say. <strong>Thanks for reading &#10084 </strong>
+          That’s it for now. I dont have anything more to say. Reach out on <a href="https://matrix.to/#/@josebritto:matrix.org">matrix</a> or
+          <a href="mailto:jose@britto.tech">email</a> get in touch with me.
+          <br>
+          <br>
+          <strong>Thanks for reading &#10084 </strong>
           <br>
           <br>
         <!--  That was my very own protfolio website created completely from scratch. <em> Phew...</em>-->

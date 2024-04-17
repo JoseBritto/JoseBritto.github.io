@@ -1,0 +1,64 @@
+#education{
+    margin-top: 10em;
+}
+
+#education .cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10vw;
+    margin-top: 24px;
+}
+.academic-card{
+    background-color: #454444;
+    padding: 20px 12px;
+    max-width: 500px;
+    min-width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+}
+.academic-card span{
+    display: block;
+}
+.academic-card .subtitle{
+    font-size: 0.8em;
+    margin-left: 8px;
+    font-weight: 800;
+    color: #96969f;
+}
+.academic-card .header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.academic-card .date{
+    font-size: 0.75em;
+    margin-top: 0;
+}
+
+.academic-card .title{
+    font-size: 1.1em;
+    font-weight: 900;
+    margin: 8px;
+    margin-right: 64px;
+}
+
+.academic-card a {
+    all: unset;
+}
+
+.academic-card a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#education a:focus{
+    color: white;
+    outline: 1px solid #67676d;
+}
