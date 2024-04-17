@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <!--- Load Fonts Done --->
 
     <link rel="stylesheet" href="assets/css/global.css">
@@ -38,16 +39,21 @@
   </header>
 
   <main>
-      <div class="intro">
-          <h1>Hello &#128075</h1>
+      <div class="intro" style='postion: relative'>
+          <h1>Hello World &#128075;</h1>
           <!--<h3>Welcome to my little site. Poke around to see what I'm upto.</h3>-->
-          <h3>My name's Britto. An amazing full-stack dev in the making.</h3>
+	  <h3>I'm Britto and I love to code.<b>A LOT</b></h3>
           <div class="icons">
-              <a class="las la-envelope" href="#"></a>
-              <a class="lab la-linkedin" href="https://www.linkedin.com/in/josebrittosaaji/"></a>
               <a class="lab la-github" href="https://github.com/JoseBritto"></a>
+              <a class="lab la-linkedin" href="https://www.linkedin.com/in/josebrittosaaji/"></a>
+              <a class="las la-envelope" href="mailto:jose@britto.tech"></a>
           </div>
-
+	  <div class="handwriting-text-pointed">
+          <div style="position: relative">
+            <img src="assets/img/Arrow.svg" height="120">
+		    <p> You should check these out! </p>
+          </div>
+	  </div>
       </div>
 
       <div class="scroll-hint">
@@ -62,19 +68,20 @@
 
       <div id="projects-display">
 
-          <div class="project-card" onclick="open_url('https://github.com/JoseBritto/BrainFuck')">
+          <div class="project-card" onclick="open_url('hthttps://github.com/NickvisionApps/Denaro')">
             <div class="top">
-                <span class="project-logo"></span>
-                <h3># BrainFuck</h3>
+                <img  style="border-radius: 5px" src="https://nickvision.org/img/denaro.svg"
+                     alt="" width="60" class="project-logo project-logo">
+                <h3>Denaro</h3>
             </div>
             <div class="bottom">
-                <p>An interpreter for the esoteric programming language "Brainfuck" created by Urban Müller in 1997.</p>
+                <p>A GTK app to manage your personal finances.</p>
                 <ul>
-                    <li>Reads code from an input file</li>
-                    <li>Run code passed through stdin</li>
-                    <li>Outputs to stdout</li>
-                    <li>Supports pipes</li>
-                    <li>Created using C# and .Net 7</li>
+                    <li>Manage multiple accounts</li>
+                    <li>Easily filter transactions</li>
+                    <li>Easily repeat transactions</li>
+                    <li>Transfer money between accounts</li>
+                    <li>Export an account as a CSV file and import a CSV, OFX or QIF file</li>
                 </ul>
             </div>
           </div>
