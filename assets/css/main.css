@@ -81,6 +81,16 @@ main .scroll-hint a:hover{
     width: 100%;
     user-select: none;
 }
+
+.handwriting-text-pointed:hover div img{
+    /*color: #6a6d6e;*/
+    filter: brightness(0) saturate(100%) invert(45%) sepia(5%) saturate(52%) hue-rotate(149deg) brightness(93%) contrast(94%);
+}
+
+.handwriting-text-pointed:hover{
+    color: #6a6d6e;
+}
+
 .handwriting-text-pointed div p{
     position: absolute;
     bottom: 15%;
