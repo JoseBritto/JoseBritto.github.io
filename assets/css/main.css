@@ -93,8 +93,8 @@ main .scroll-hint a:hover{
 
 .handwriting-text-pointed div p{
     position: absolute;
-    bottom: 15%;
-    left: 9%;
+    top: 55%;
+    left: 140px;
     padding-left: 1%;
 }
 
