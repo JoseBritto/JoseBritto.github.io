@@ -62,3 +62,7 @@
     color: white;
     outline: 1px solid #67676d;
 }
+
+#education .title i{
+    overflow: hidden;
+}

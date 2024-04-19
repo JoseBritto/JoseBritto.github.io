@@ -11,6 +11,10 @@
     overflow-x: hidden;
 }
 
+:root {
+    color-scheme: dark;
+}
+
 html{
     scroll-behavior: smooth;
 }
