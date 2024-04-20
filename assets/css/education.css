@@ -74,6 +74,7 @@
     color: #807e7e; 
     font-size: 0.7rem; 
     font-style: italic;
+    padding-right: 2px;
 }
 
 @media only screen and (max-width: 600px) {
