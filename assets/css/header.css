@@ -73,3 +73,14 @@ header .blinking-cursor{
         opacity: 0;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    
+    header nav .header_right{
+        margin-right: 5vw;
+    }
+    
+    header{
+        height: 2vh;
+    }
+}

@@ -36,6 +36,7 @@ main .intro h3{
 main .intro .icons{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 main .intro .icons a{
     font-size: 2em;
@@ -109,4 +110,25 @@ main .scroll-hint a:hover{
     font-family: "Kalam", cursive;
     font-weight: 300;
     font-style: normal;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .handwriting-text-pointed {
+        display: none;
+    }
+
+    main .intro h1{
+        font-size: 2.25em;
+        margin: 20px;
+    }
+    
+    main .intro h3{
+        font-size: 0.85em;
+    }
+
+    main .intro .icons{
+        
+    }
 }

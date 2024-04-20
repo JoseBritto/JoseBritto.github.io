@@ -25,7 +25,8 @@ html{
 }
 
 .main-section-title h2{
-    font-size: xx-large;
+    font-size: 2em;
+    margin-left: 0.15em;
 }
 
 .main-section-title h3{
@@ -39,4 +40,36 @@ br{
 a:focus{
     color: white;
     outline: 1px solid #67676d;
+}
+
+@media only screen and (max-width: 600px) {
+    .no-mobile{
+        display: none !important;
+    }
+    
+    .main-section-title{
+        width: 80%;
+    }
+
+    .main-section-title h2{
+        font-size: 2em;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-left: 10% !important;
+    }
+    .main-section-title h2 span{
+        display: none;
+    }
+    .main-section-title h3{
+        font-size: 0.85em;
+        color: #67676d;
+        text-align: left;
+        margin-left: 10% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .only-mobile{
+        display: none !important;
+    }
 }
