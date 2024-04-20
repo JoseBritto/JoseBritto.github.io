@@ -5,7 +5,6 @@ body{
     max-width: 100vw;
     margin: 0;
 }
-
 main{
     height: 95vh;
 }
@@ -18,8 +17,7 @@ main .intro{
     height: 83vh;
     width: 100vw;
 }
-
-main .intro h1{
+main .intro h2{
     font-size: 2.5em;
     margin: 20px;
 }
@@ -32,7 +30,6 @@ main .intro h3{
     font-weight: normal;
     text-align: center;
 }
-
 main .intro .icons{
     display: flex;
     align-items: center;
@@ -45,7 +42,6 @@ main .intro .icons a{
     color: unset;
     margin-left: 10px;
 }
-
 main .scroll-hint{
     width: 100vw;
     text-align: center;
@@ -54,7 +50,6 @@ main .scroll-hint{
     position: absolute;
     bottom: 10px;
 }
-
 main .scroll-hint a{
     color: unset;
     text-decoration: none;
@@ -64,14 +59,11 @@ main .scroll-hint a{
 main .scroll-hint a:hover{
     opacity: 0.8;
 }
-
-
 .kalam-regular {
     font-family: "Kalam", cursive;
     font-weight: 400;
     font-style: normal;
 }
-
 .handwriting-text-pointed {
     font-family: "Kalam", cursive;
     font-weight: 700;
@@ -84,7 +76,6 @@ main .scroll-hint a:hover{
     width: 100%;
     user-select: none;
 }
-
 .handwriting-text-pointed:hover div img{
     /*color: #6a6d6e;*/
     filter: brightness(0) saturate(100%) invert(45%) sepia(5%) saturate(52%) hue-rotate(149deg) brightness(93%) contrast(94%);
@@ -93,42 +84,32 @@ main .scroll-hint a:hover{
 .handwriting-text-pointed:hover{
     color: #6a6d6e;
 }
-
 .handwriting-text-pointed div p{
     position: absolute;
     top: 55%;
     left: 140px;
     padding-left: 1%;
 }
-
 .handwriting-text-pointed div img{
     filter: brightness(0) saturate(100%) invert(26%) sepia(10%) saturate(136%) hue-rotate(156deg) brightness(95%) contrast(86%);
     /* computed using https://codepen.io/sosuke/pen/Pjoqqp */
 }
-
 .kalam-light {
     font-family: "Kalam", cursive;
     font-weight: 300;
     font-style: normal;
 }
-
-
-
 @media only screen and (max-width: 600px) {
     .handwriting-text-pointed {
         display: none;
     }
-
-    main .intro h1{
+    main .intro h2{
         font-size: 2.25em;
         margin: 20px;
     }
-    
     main .intro h3{
         font-size: 0.85em;
     }
-
     main .intro .icons{
-        
     }
 }

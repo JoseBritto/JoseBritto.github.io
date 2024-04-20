@@ -42,6 +42,10 @@ a:focus{
     outline: 1px solid #67676d;
 }
 
+.no-display{
+    display: none !important;
+}
+
 @media only screen and (max-width: 600px) {
     .no-mobile{
         display: none !important;
