@@ -103,3 +103,40 @@
     margin-left: -10px;
     margin-top: 20px;
 }
+
+
+#projects .main-section-title{
+    margin-left: 10%;
+}
+
+#projects .main-section-title *{
+    margin-left: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #projects .project-card{
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    #projects-display{
+        width: 80vw;
+    }
+
+    #projects .project-card .bottom{
+        padding-left: 4%;
+    }
+
+    #projects .project-card .bottom p{
+        font-size: 1em;
+        margin-left: 1%;
+        padding: 2%;
+    }
+    
+    #projects .project-card .bottom ul{
+        font-size: 0.75em;
+        margin-left: 5%;
+    }
+}

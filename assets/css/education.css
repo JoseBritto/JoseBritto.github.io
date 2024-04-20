@@ -20,9 +20,7 @@
     border-radius: 10px;
     font-size: 1em;
 }
-.academic-card span{
-    display: block;
-}
+
 .academic-card .subtitle{
     font-size: 0.8em;
     margin-left: 8px;
@@ -40,6 +38,9 @@
 .academic-card .date{
     font-size: 0.75em;
     margin-top: 0;
+    min-width: 8em;
+    max-height: 1.5em;
+    margin-top: 2%;
 }
 
 .academic-card .title{
@@ -65,4 +66,35 @@
 
 #education .title i{
     overflow: hidden;
+}
+
+#education .title .hint{
+    display: inline; 
+    text-align: left; 
+    color: #807e7e; 
+    font-size: 0.7rem; 
+    font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #education .cards{
+        justify-content: center;
+        margin-left: 0;
+    }
+    #education .academic-card{
+        width: 75vw;
+        margin: 10px;
+        border-radius: 10px;
+        font-size: 0.75em;
+        padding: 10px 6px;
+    }
+
+    .academic-card .title{
+        font-size: 1em;
+    }
+    
+    .academic-card .title .hint{
+        margin-left: 1.4em;
+    }
 }
