@@ -77,6 +77,10 @@
     font-size: 0.9em;
 }
 
+#projects .project-card .bottom ul li{
+    margin: 5px 0;
+}
+
 #projects .project-card .bottom p{
     margin: 10% 4%;
     text-align: left;
