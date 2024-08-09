@@ -12,7 +12,7 @@
     margin-top: 24px;
 }
 .academic-card{
-    background-color: #454444;
+    background-color: #353434;
     padding: 20px 12px;
     max-width: 500px;
     min-width: 250px;
@@ -25,7 +25,7 @@
     font-size: 0.8em;
     margin-left: 8px;
     font-weight: 800;
-    color: #96969f;
+    color: #a0a0a3;
 }
 .academic-card .header{
     display: flex;
@@ -71,7 +71,7 @@
 #education .title .hint{
     display: inline; 
     text-align: left; 
-    color: #807e7e; 
+    color: #babac6; 
     font-size: 0.7rem; 
     font-style: italic;
     padding-right: 2px;

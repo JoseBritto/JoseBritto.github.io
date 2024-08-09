@@ -57,7 +57,7 @@
 
 #projects .project-card .top{
     grid-area: top;
-    background-color: #67676d;
+    background-color: #575757;
     text-align: center;
     font-size: 2em;
     display: flex;
@@ -68,7 +68,7 @@
 
 #projects .project-card .bottom{
     grid-area: bottom;
-    background-color: #454444;
+    background-color: #353434;
     font-size: 1em;
 }
 
