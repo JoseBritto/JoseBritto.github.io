@@ -54,7 +54,7 @@ main .scroll-hint a{
     color: unset;
     text-decoration: none;
     font-size: xxx-large;
-    opacity: 0.1;
+    opacity: 0.4;
 }
 main .scroll-hint a:hover{
     opacity: 0.8;
