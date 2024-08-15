@@ -15,7 +15,7 @@
     /*background-color: rgba(169, 169, 179, 0.9);*/
     height: fit-content;
     margin-top: 20px;
-    padding: 12px;
+    padding: 5px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
@@ -30,7 +30,7 @@
     box-shadow: rgb(27, 28, 29) 10px 10px 10px;
     border: solid 1px #454444;
     overflow: hidden;
-    margin: 40px;
+    margin: 36px 12px;
     background-color: #353434;
 }
 
