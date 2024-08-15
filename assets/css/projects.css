@@ -29,14 +29,8 @@
     border-radius: 20px;
     box-shadow: rgb(27, 28, 29) 10px 10px 10px;
     border: solid 1px #454444;
-    display: grid;
-    grid-template-areas:
-            "top"
-            "bottom"
-            "bottom";
     overflow: hidden;
     margin: 40px;
-    gap: 0;
     background-color: #353434;
 }
 
