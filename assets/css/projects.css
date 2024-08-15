@@ -36,18 +36,13 @@
             "bottom";
     overflow: hidden;
     margin: 40px;
+    gap: 0;
+    background-color: #353434;
 }
 
 #projects .project-card:hover{
-    /*
-    transform: scale(1.1);
-    */
-    /*transition: transform 0.2s ease-in-out;*/
     cursor: pointer;
-    /*
-    box-shadow: rgba(255, 255, 255, 0.12) 0 0 50px;
-    *//*
-    box-shadow: rgba(0, 0, 0, 0.83) 10px 10px 30px;*/
+    box-shadow: rgba(0, 0, 0, 0.83) 10px 10px 30px;
 }
 
 #projects .project-card:focus{
@@ -63,7 +58,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 70px;
+    height: 100px;
 }
 
 #projects .project-card .bottom{
