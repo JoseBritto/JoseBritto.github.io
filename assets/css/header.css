@@ -48,6 +48,7 @@ header>nav>a:hover{
 header>nav .header_right{
     display: flex;
     align-items: center;
+    margin-right: 16px;
 }
 
 header .blinking-cursor{
