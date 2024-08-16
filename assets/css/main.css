@@ -99,6 +99,29 @@ main .scroll-hint a:hover{
     font-weight: 300;
     font-style: normal;
 }
+
+.floating-image{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    z-index: -1;
+    opacity: 0.1;
+    border-radius: 50%;
+    overflow: hidden;
+    rotate: 45deg;
+}
+.floating-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1200px) {
+    .floating-image{
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .handwriting-text-pointed {
         display: none;
