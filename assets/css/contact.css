@@ -1,0 +1,115 @@
+#contact{
+    margin-top: 2vh;
+    padding-top: 12vh;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+#contact .main-section-title{
+    margin-bottom: 32px;
+}
+
+#contact form{
+    font-size: 0.95em;
+    margin-left: 11vw;
+    align-self: flex-start;
+    max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+}
+
+#contact form textarea{
+    font-size: 0.95em;
+    outline: none;
+    border: 2px solid #67676d;
+    border-radius: 10px;
+    padding: 10px;
+    color: #babac6;
+    background-color: rgba(53, 52, 52, 0.56);
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 48px;
+    margin-top: 12px;
+}
+
+#contact form input[type="email"]{
+    font-size: 0.95em;
+    outline: none;
+    border: 2px solid #67676d;
+    border-radius: 10px;
+    padding: 10px;
+    color: #babac6;
+    background-color: rgba(53, 52, 52, 0.56);
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 24px;
+    margin-top: 12px;
+    display: inline-block;
+    width: 80%;
+    margin-right: 0;
+}
+
+#contact form button{
+    display: inline-block;
+    font-size: 1em;
+    outline: none;
+    border: 2px solid #67676d;
+    border-radius: 10px;
+    height: fit-content;
+    padding: 10px;
+    font-weight: bold;
+    color: #babac6;
+    cursor: pointer;
+    margin-left: 1%;
+    width: 12%;
+    min-width: 6em;
+    background-color: #67676d;
+    margin-bottom: 10vh;
+}
+
+#contact a{
+    all: unset;
+    text-decoration: underline;
+}
+
+#contact a:hover{
+    cursor: pointer;
+}
+
+#contact a:focus{
+    color: white;
+    outline: 1px solid #67676d;
+}
+
+@media only screen and (max-width: 600px) {
+    #contact{
+        font-size: 0.85em;
+        line-height: 1.8;
+    }
+    #contact form{
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    #contact form textarea{
+        width: 90%;
+    }
+    
+    #contact .main-section-title{
+        margin-bottom: 12px;
+        font-size: 1.2em;
+    }
+    
+    #contact form input[type="email"]{
+        width: 91%;
+    }
+    
+    #contact form button{
+        width: 98%;
+        margin: 0;
+    }
+}

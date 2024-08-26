@@ -230,7 +230,7 @@
       <div class="floating-image no-mobile" style=" top: 40%; right: 20%; rotate: 0deg; border-radius: 0; width: 50px; height: 40px;">
           <img src="assets/img/eos-icon.png" alt="My Github Profile Picture">
       </div>
-      <div class="floating-image no-mobile" style=" top: 75%; right: 24%; rotate: 0deg; border-radius: 0;width: 160px; height: 40px;">
+      <div class="floating-image no-mobile" style=" opacity: 0.3; top: 75%; right: 24%; rotate: 0deg; border-radius: 0;width: 160px; height: 40px;">
           <img src="assets/img/archlinux-logo-dark.png" alt="My Github Profile Picture" >
       </div>
       <div class="floating-image no-mobile" style=" top: 50%; right: 45%; rotate: 0deg; border-radius: 0; width: 60px; height: 62px;">
@@ -277,22 +277,48 @@
               </li>
           </ul>
 
-          That’s it for now. I dont have anything more to say. Reach out on <a href="https://matrix.to/#/@josebritto:matrix.org">matrix</a> or
-          <a href="mailto:jose@britto.tech">email</a> get in touch with me.
+          And that’s about it. I can't think of anything more to say about myself.
           <br>
-          <br>
-          <strong>Thanks for reading &#10084 </strong>
           <br>
           <br>
         <!--  That was my very own protfolio website created completely from scratch. <em> Phew...</em>-->
       </section>
-
-
+  </div>
+  
+  <div id="contact">
+      <div class="floating-image no-mobile" style=" opacity: 0.3; top: 20%; right: 20%; rotate: 25deg; border-radius: 0; width: 50px; height: 40px;">
+          <img src="assets/img/email-file-svgrepo-com.svg" alt="Email icon">
+      </div>
+      <div class="floating-image no-mobile" style=" opacity: 0.2; top: 10%; left: 35%; rotate: 18deg; border-radius: 5px; width: 40px; height: 40px;">
+          <img src="assets/img/linkedin-svgrepo-com.svg" alt="Linkedin icon">
+      </div>
+      <div class="floating-image no-mobile" style=" top: 75%; right: 40%; rotate: -20deg; border-radius: 0;width: 40px; height: 40px;">
+          <img src="assets/img/email-svgrepo-com.svg" alt="Email icon" >
+      </div>
+      <div class="floating-image no-mobile" style=" bottom: 10%; left: 40%; rotate: -20deg; border-radius: 0;width: 40px; height: 40px;">
+          <img src="assets/img/chat-svgrepo-com.svg" alt="Email icon" >
+      </div>
+      <div class="floating-image no-mobile" style=" top: 50%; right: 45%; rotate: 0deg; border-radius: 0; width: 60px; height: 62px;">
+          <img src="assets/img/chat-svgrepo-com-1.svg" alt="My Github Profile Picture">
+      </div>
+      <section class="main-section-title">
+          <h2>Get in Touch </h2>
+      </section>
+      <form id="contact-form">
+          <label for="message-input">You can reach out to me through <a href="https://www.linkedin.com/in/josebrittosaaji">Linkedin</a>, <a href="https://matrix.to/#/@josebritto:matrix.org">matrix</a>, or <a href="mailto:jose@britto.tech">email</a> . Or, just type whatever you have to say below </label>
+          <textarea placeholder="You are super cool" id="message-input" name="message-input" cols="40" rows="10" required></textarea>
+          <label for="email-input">Now, enter your email here and hit send. I will try to get back to you as soon as I can.</label>
+          <div style="width: 100%">
+            <input placeholder="me@myemail.com" name="email-input" type="email" id="email-input" required>
+            <button id="contact-submit" type="submit">Send <i class="lab la-telegram-plane"></i></button>
+          </div>
+      </form>
   </div>
   
   <link rel="stylesheet" href="assets/css/projects.css">
   <link rel="stylesheet" href="assets/css/education.css">
   <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
   
   <!--- Load Fonts --->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
@@ -305,6 +331,7 @@
 
   <!--Load scripts-->
   <script src="assets/js/navigator.js"></script>
+  <script src="assets/js/contact-form.js"></script>
   <!--<script src="assets/js/move-images.js"></script>-->
 </body>
 </html>
