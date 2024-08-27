@@ -69,7 +69,7 @@
     width: 12%;
     min-width: 6em;
     background-color: #67676d;
-    margin-bottom: 10vh;
+    margin-bottom: 70px;
 }
 
 #contact a{
@@ -85,7 +85,21 @@
     color: white;
     outline: 1px solid #67676d;
 }
+#contact-success-msg{
+    text-align: center;
+    width: 90%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
+#contact-error-msg{
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fe5186;
+}
 @media only screen and (max-width: 600px) {
     #contact{
         font-size: 0.85em;
@@ -111,6 +125,5 @@
     
     #contact form button{
         width: 98%;
-        margin: 0;
     }
 }
