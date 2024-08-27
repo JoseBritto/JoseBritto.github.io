@@ -35,6 +35,7 @@
     font-family: 'Inter', sans-serif;
     margin-bottom: 48px;
     margin-top: 12px;
+    resize: none;
 }
 
 #contact form input[type="email"]{
