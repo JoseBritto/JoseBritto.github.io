@@ -59,11 +59,7 @@ main .scroll-hint a{
 main .scroll-hint a:hover{
     opacity: 0.8;
 }
-.kalam-regular {
-    font-family: "Kalam", cursive;
-    font-weight: 400;
-    font-style: normal;
-}
+
 .handwriting-text-pointed {
     font-family: "Kalam", cursive;
     font-weight: 700;
@@ -93,11 +89,6 @@ main .scroll-hint a:hover{
 .handwriting-text-pointed div img{
     filter: brightness(0) saturate(100%) invert(26%) sepia(10%) saturate(136%) hue-rotate(156deg) brightness(95%) contrast(86%);
     /* computed using https://codepen.io/sosuke/pen/Pjoqqp */
-}
-.kalam-light {
-    font-family: "Kalam", cursive;
-    font-weight: 300;
-    font-style: normal;
 }
 
 .floating-image{
