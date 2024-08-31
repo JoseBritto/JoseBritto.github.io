@@ -47,7 +47,7 @@ contactForm.addEventListener('submit', (e) => {
     {
         name = "Invalid Name";
     }
-    fetch('https://discord.com/api/webhooks/1277718137844006984/tdXJ1fyFhmEjPN9Tu8A-WggBzfjm-Tcr_NFduM2iIsi9R8XZrY3b7YnTkR1PdYp1ExIa?wait=true', {
+    fetch('https://dmh.britto.tech/sendMessage?webhookId=1279251574832627786', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
