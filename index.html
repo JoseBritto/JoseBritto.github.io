@@ -52,9 +52,12 @@
             <img src="assets/img/ghost-tiny.webp" alt="My Github Profile Picture" height="100" width="100">
       </div>
       <div class="intro" style='postion: relative'>
-          <h2>Hello &#128075;</h2>
-          <!--<h3>Welcome to my little site. Poke around to see what I'm upto.</h3>-->
-          <h3>I'm Britto and I love to code.<b>A LOT</b></h3>
+          <h3>Hi &#128075 I'm </h3>
+          <!--<h2>Hello &#128075;</h2>-->
+          <h2>Jose Britto Saaji</h2>
+          <h3>Your friendly neighbourhood Software Developer</h3>
+         <!-- <h3>Welcome to my little site. Poke around to see what I'm upto.</h3>-->
+          <!--<h3>I'm Britto and I love to code.<b>A LOT</b></h3>-->
           <div class="icons">
               <a class="lab la-github" href="https://github.com/JoseBritto" aria-label="Github Profile Link"></a>
               <a class="lab la-linkedin" href="https://www.linkedin.com/in/josebrittosaaji/" aria-label="LinkedIn Profile Link"></a>
@@ -68,128 +71,108 @@
 	  </div>
       </div>
 
-      <div class="scroll-hint no-mobile">
+      <div class="scroll-hint">
           <a href="#projects" class="las la-arrow-down" aria-label="Scroll to next section"></a>
       </div>
   </main>
   
   <div id="projects-bg">
-  <div id="projects">
-      <section class="main-section-title">
-          <h2>Projects <span>...</span></h2>
-          <h3>Some awesome projects that I worked on</h3>
-      </section>
+      <div id="projects">
+          <section class="main-section-title">
+              <h2>Projects <span>...</span></h2>
+              <h3>Some awesome projects that I worked on</h3>
+          </section>
 
-      <div id="projects-display">
-
-          <div tabindex="0" class="project-card" onclick="open_url('https://github.com/NickvisionApps/Denaro')">
-            <div class="top">
-                <img  style="border-radius: 5px" src="https://nickvision.org/img/denaro.svg"
-                     alt="" width="60" class="project-logo project-logo" loading="lazy">
-                <h3>Denaro</h3>
-            </div>
-            <div class="bottom">
-                <p>A GTK app to manage your personal finances.</p>
-                <ul>
-                    <li>- Manage multiple accounts</li>
-                    <li>- Easily filter transactions</li>
-                    <li>- Easily repeat transactions</li>
-                    <li>- Transfer money between accounts</li>
-                    <li>- Export an account as a CSV file and import a CSV, OFX or QIF file</li>
-                </ul>
-            </div>
-          </div>
-
-
-          <div  tabindex="0" class="project-card" onclick="open_url('https://shorty.britto.tech/')">
-              <div class="top">
-                  <img  style="height: 40px" src="https://shorty.britto.tech/favicon.svg"
-                       alt="shorty logo" width="60" class="project-logo project-logo" loading="lazy">
-                  <h3>Shorty</h3>
-              </div>
-              <div class="bottom">
-                  <p>A simple and clean webapp that shortens your links.</p>
-                  <ul>
-                      <li>- Easy to use scriptable API</li>
-                      <li>- Excellent documentation</li>
-                      <li>- Easy to use admin panel [WIP]</li>
-                      <li>- Clean UI with no distractions</li>
-                      <li>- Created using C# and .Net 8</li>
-                  </ul>
-
-              </div>
-          </div>
-          
-          <div  tabindex="0" class="project-card" onclick="open_url('https://moosic.britto.tech/')">
-              <div class="top">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbE-IQnhu_kg4eNf1fmz2TSFNZzjIqm0mnpcb0LIc8SHUcCstLMR7639m8Z-b-ib41gno&usqp=CAU"
-                       alt="" width="60" class="project-logo project-logo" loading="lazy">
-                  <h3>Moosic</h3>
-              </div>
-              <div class="bottom">
-                  <p>A discord bot that can play music all day long for you and your friends to enjoy.</p>
-                  <ul>
-                      <li>- Searches for music by name</li>
-                      <li>- Supports custom playlists</li>
-                      <li>- Plays spotify playlists</li>
-                      <li>- Created using C# and .Net 7</li>
-                  </ul>
-
-                  <div class="ps">
-                      <span class="lab la-spotify"></span>
-                      <span class="lab la-youtube"></span>
-                      <span class="lab la-soundcloud"></span>
-                      <span class="lab la-discord"></span>
+          <div id="projects-display">
+              <div class="project-card-v2" onclick="open_url('https://github.com/NickvisionApps/Denaro')">
+                  <div class="preview">
+                      <img src="assets/img/denaro-cropped.png" alt="Denaro" height="160">
                   </div>
 
-              </div>
-          </div>
-
-
-          <div tabindex="0" class="project-card" onclick="open_url('https://github.com/JoseBritto/Game-of-Life')">
-              <div class="top"
-                   style="background-image: url('assets/img/Conways_firework.gif')">
-                  <h3>Game of Life</h3>
-              </div>
-              <div class="bottom">
-                  <p>Recreation of the cellular automaton "Game of Life" by John Conway.</p>
-                  <ul>
-                      <li>- 0 player game</li>
-                      <li>- Runs 100+ simulations per second</li>
-                      <li>- Created using C# and Unity</li>
-                  </ul>
-              </div>
-          </div>
-
-
-          <div  tabindex="0" class="project-card" onclick="open_url('https://github.com/JoseBritto/Flappy-Bird')">
-            <div class="top">
-                <img src="assets/img/flappy-bird.png"
-                     alt="" width="80" class="project-logo project-logo">
-                <h3>Flappy</h3>
-            </div>
-            <div class="bottom">
-                <p>My shot at recreating the classic game of "Flappy Bird".</p>
-                <ul>
-                    <li>- Collision detection</li>
-                    <li>- Simple gravity & physics system</li>
-                    <li>- Keeps track of the high score</li>
-                    <li>- Created using C# and Unity</li>
-                </ul>
+                  <div class="text">
+                      <h3>Denaro</h3>
+                      <p>Volunteer maintainer for Denaro, a simple open source budgeting app for the GNOME desktop with over 64,000 downloads.</p>
+                  </div>
+                  <div class="links">
 <!--
-                <div class="ps">
-                    <span class="lab la-spotify"></span>
-                    <span class="lab la-youtube"></span>
-                    <span class="lab la-soundcloud"></span>
-                </div>-->
+                      <a href="https://github.com/NickvisionApps/Denaro" target="_blank"><i class="lab la-github"></i> Source Code</a>
+-->
+                      <a href="https://github.com/NickvisionApps/Denaro" target="_blank"> <i class="las la-download"></i> Download</a>
+                  </div>
+                  <div class="tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">.Net</span>
+                        <span class="tag">GTK</span>
+                        <span class="tag">SQLite</span>
+                  </div>
+              </div>
 
-            </div>
+              <div class="project-card-v2" onclick="open_url('https://github.com/JoseBritto/Shorty')">
+                    <div class="preview">
+                        <img src="assets/img/shorty-screenshot.png" alt="Shorty" height="160" style="border-color: #20202A">
+                    </div>
+
+                    <div class="text">
+                        <h3>Shorty</h3>
+                        <p>A URL shortener with a beautiful UI and a powerful yet simple API.</p>
+                    </div>
+                    <div class="links">
+                       <!-- <a href="https://github.com/JoseBritto/Shorty" target="_blank"><i class="lab la-github"></i> Source Code</a>-->
+                        <a href="https://shorty.britto.tech" target="_blank"> <i class="las la-link"></i> Live Demo</a>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">.Net</span>
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JS</span>
+                    </div>
+              </div>
+
+              <div class="project-card-v2" onclick="open_url('https://github.com/JoseBritto/Simple-Weather')">
+                  <div class="preview">
+                      <img src="assets/img/simple-weather.png" alt="Shorty" height="160" style="border-color: #20202A;">
+                  </div>
+
+                  <div class="text">
+                      <h3>Simple Weather</h3>
+                      <p>A very minimalist weather app built in a few hours</p>
+                  </div>
+                  <div class="links">
+                      <!-- <a href="https://github.com/JoseBritto/Shorty" target="_blank"><i class="lab la-github"></i> Source Code</a>-->
+                      <a href="https://britto.tech/Simple-Weather" target="_blank"> <i class="las la-link"></i> Live Demo</a>
+                  </div>
+
+                  <div class="tags">
+                      <span class="tag">React</span>
+                      <span class="tag">HTML</span>
+                      <span class="tag">CSS</span>
+                      <span class="tag">JS</span>
+                  </div>
+              </div>
+              <div class="project-card-v2" onclick="open_url('https://github.com/JoseBritto/Game-of-Life')">
+                  <div class="preview">
+                      <img src="assets/img/Conways_firework.gif" alt="Shorty" height="160"> <!--style="border: solid 2px #222222; box-shadow: #000000 0 0 4px 2px"-->
+                  </div>
+
+                  <div class="text">
+                      <h3>Game Of Life</h3>
+                      <p>Recreation of the "Game Of Life" by John Conway</p>
+                  </div>
+                  <div class="links">
+                      <!-- <a href="https://github.com/JoseBritto/Shorty" target="_blank"><i class="lab la-github"></i> Source Code</a>-->
+                      <a href="https://github.com/JoseBritto/Game-of-Life" target="_blank"> <i class="lab la-github"></i> View Source Code</a>
+                  </div>
+
+                  <div class="tags">
+                      <span class="tag">Unity</span>
+                      <span class="tag">C#</span>
+                  </div>
+              </div>
+
           </div>
-
-
-
       </div>
-  </div>
   </div>
 
   <div id="education">
@@ -219,6 +202,8 @@
               </div>
               <span class="subtitle">Got a place in the Dean's Honour list for all past semesters</span>
           </div>
+
+
           <div class="academic-card">
               <div class="header">
                 <span class="title">
@@ -227,9 +212,21 @@
                         IEEEXtreme 17.0
                     </a>
                 </span>
-                <span class="date">October 2023</span>
+                  <span class="date">October 2023</span>
               </div>
               <span class="subtitle">Ranked 8th in Canada as a team of three</span>
+          </div>
+          <div class="academic-card">
+              <div class="header">
+                <span class="title">
+                    <a target="_blank" href="https://ieeextreme.org/ieeextreme-18/">
+                        <i style="font-size: 1.2em; margin-right: 2px; margin-bottom: -3px;" class="fa-solid fa-trophy"></i>
+                        IEEEXtreme 18.0
+                    </a>
+                </span>
+                  <span class="date">October 2024</span>
+              </div>
+              <span class="subtitle">Ranked 5th in Canada and <strong>1st</strong> in college as a team of three</span>
           </div>
       </section>
   </div>
@@ -261,15 +258,15 @@
           <ul>
               <li>
                   <span class="name">Languages:</span>
-                  <span class="value">C#, Java, Python, Javascript, PHP, SQL</span>
+                  <span class="value">C#, Javascript, Java, Python, Javascript, PHP, SQL</span>
               </li>
               <li>
                   <span class="name">Frameworks:</span>
-                  <span class="value">.Net, React</span>
+                  <span class="value">.Net, React, React Native, Spring Boot</span>
               </li>
               <li>
                   <span class="name">Cloud Hosting:</span>
-                  <span class="value">AWS, Oracle Cloud</span>
+                  <span class="value">Azure, AWS, Oracle Cloud</span>
               </li>
               <li>
                   <span class="name">Game Engines:</span>
@@ -285,7 +282,7 @@
               </li>
           </ul>
 
-          And that’s about it. I can't think of anything more to say about myself.
+          <!--And that’s about it. I can't think of anything more to say about myself.-->
           <br>
           <br>
           <br>
@@ -326,6 +323,7 @@
   </div>
   
   <link rel="stylesheet" href="assets/css/projects.css">
+  <link rel="stylesheet" href="assets/css/projects-v2.css">
   <link rel="stylesheet" href="assets/css/education.css">
   <link rel="stylesheet" href="assets/css/about.css">
   <link rel="stylesheet" href="assets/css/contact.css">

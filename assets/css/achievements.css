@@ -1,0 +1,63 @@
+#achievements{
+    margin-top: 20vh;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .main-section-title>h3{
+        font-family: "Inter", sans-serif;
+    }
+    .cards{
+        margin-top: 2vh;
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .cards::after {
+        /*Dummy item with 0 width to make others expand*/
+        content: "";
+        flex: 0;
+    }
+    .academic-card{
+        flex: 1 1 400px;
+        border-radius: 16px;
+        border: 2px solid var(--color-text-dim);
+        padding: 10px;
+        margin: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .academic-card:hover{
+        box-shadow: var(--color-secondary) 0 0 10px 1px;
+        cursor: pointer;
+    }
+    .academic-card .title{
+        font-size: 1.2em;
+        font-weight: 700;
+        a {
+            text-decoration: none;
+            color: unset;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    #achievements{
+        .cards{
+            width: 90%;
+        }
+        .academic-card{
+            flex: 1 1 300px;
+            font-size: 0.6em;
+        }
+        .main-section-title{
+            margin-left: 0;
+        }
+    }
+}
