@@ -4,6 +4,8 @@
 
 */
 
+@import "variables.css";
+
 
 *{
     margin: 0;
@@ -37,9 +39,13 @@ br{
     margin: 4px;
 }
 
-a:focus{
+a:focus-visible{
     color: white;
     outline: 1px solid #67676d;
+}
+
+a:active{
+    color: white;
 }
 
 .no-display{
@@ -76,4 +82,11 @@ a:focus{
     .only-mobile{
         display: none !important;
     }
+}
+
+/*v2*/
+.v2 {
+    font-family: "Poppins", serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
 }
