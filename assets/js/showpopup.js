@@ -22,6 +22,12 @@ window.addEventListener('load', function() {
         })
         .then(() => {
             setTimeout(() => {
+
+                // Scroll to top and disable scrolling
+                window.scrollTo(0, 0);
+                let prevOnScroll = window.onscroll;
+                window.onscroll = function () { window.scrollTo(0, 0); };
+
                 document.getElementById('gotolab').addEventListener('click', function(){
                     window.location.href = "https://labtest1.comp3133.britto.tech/";
                 });
@@ -29,6 +35,9 @@ window.addEventListener('load', function() {
                 document.getElementById('stayhere').addEventListener('click', function(){
                     console.log('stay here');
                     document.querySelector('.popup-root').parentElement.remove();
+
+                    // Enable scrolling
+                    window.onscroll = prevOnScroll;
                 });
             }, 1000);
         });
