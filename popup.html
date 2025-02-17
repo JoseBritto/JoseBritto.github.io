@@ -1,0 +1,108 @@
+<div class="popup-root">
+
+  <div class="title">
+    <span class="text">
+      Possible URL mix up
+    </span>
+
+    <!--<div class="close">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="#D9D9D9"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+      </button>
+    </div>-->
+  </div>
+  <div class="body">
+    Hello visitor! <br>
+    Sorry to interrupt. I realized way too late I messed up the live url for one of my lab tests.
+    <br>
+    If this is Pritesh looking to grade my lab test, sorry for the mix up. Please click the blue button below to launch the chat app.
+    <br>
+    Thanks
+  </div>
+
+  <div class="actions">
+    <button id="gotolab">Go to Lab Test Submission</button>
+    <button id="stayhere">Stay & View Portfolio</button>
+  </div>
+
+  <style>
+
+    .popup-root {
+      background: var(--color-background);
+      padding: 40px;
+      border-radius: 8px;
+      font-family: "Poppins", sans-serif;
+      max-width: 800px;
+      color: var(--color-text);
+    }
+
+    .popup-root .title{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: var(--color-accent);
+      font-weight: 900;
+      font-size: 1.5em;
+      width: 100%;
+    }
+
+    .popup-root .close {
+      padding: 0;
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .popup-root .close button {
+      background: #900909;
+      padding: 4px 8px;
+      width: fit-content;
+      border-radius: 4px;
+      margin: 0;
+      border: none;
+      outline: none;
+    }
+
+    .popup-root .body{
+      margin: 20px 0;
+    }
+
+    .popup-root button{
+      padding: 16px 32px;
+      outline: none;
+      border: none;
+      border-radius: 8px;
+      margin: 2px;
+    }
+
+    .popup-root button:hover{
+      cursor: pointer;
+    }
+
+    .popup-root .actions{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .popup-root .actions button:first-child{
+      background: #123456;
+    }
+    .popup-root .actions button:first-child:hover{
+      background: #25609a;
+    }
+
+
+    .popup-root .actions button:last-child{
+      background: #550909;
+    }
+    .popup-root .actions button:last-child:hover{
+      background: #a10f0f;
+    }
+
+
+
+  </style>
+
+
+</div>
