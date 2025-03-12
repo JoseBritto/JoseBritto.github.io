@@ -86,7 +86,7 @@ a:active{
 
 /*v2*/
 .v2 {
-    font-family: "Poppins", serif;
+    font-family: "Poppins", sans-serif;
     background-color: var(--color-background);
     color: var(--color-text);
 }
