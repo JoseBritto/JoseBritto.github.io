@@ -37,7 +37,7 @@ main {
             align-items: center;
             border-radius: 50%;
             overflow: clip;
-            width: 200px;
+            width: 70%;
             aspect-ratio: 1;
             img {
                 width: 100%;
@@ -81,6 +81,7 @@ main {
             justify-content: flex-start;
             align-items: center;
             gap: 15px;
+            flex-wrap: wrap;
             a{
                 transition: all 0.1s;
                 text-decoration: none;
