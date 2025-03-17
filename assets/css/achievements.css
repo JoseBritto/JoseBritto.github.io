@@ -1,5 +1,9 @@
 #achievements{
-    margin-top: 20vh;
+    padding-top: 28vh;
+
+    min-height: 60vh;
+
+    position: relative;
 
     display: flex;
     align-items: center;
@@ -44,6 +48,12 @@
             text-decoration: none;
             color: unset;
         }
+    }
+
+    .academic-card .subtitle{
+        font-size: 0.8em;
+        color: #85858d;
+        font-family: 'Roboto Mono', monospace;
     }
 }
 

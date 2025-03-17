@@ -108,6 +108,39 @@ main {
                 }
             }
         }
+
+        .btn-resume {
+            justify-self: flex-start;
+            margin-right: auto;
+            outline: none;
+            border: 2px solid var(--color-text-dim);
+            font-weight: 700;
+            font-size: 0.9em;
+            /*background-color: var(--color-primary);*/
+            padding: 12px 18px;
+            /*width: 7em;
+            height: 3em;*/
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: flex-start;
+            background: rgba(103, 103, 109, 0.3);
+            gap: 8px;
+
+            svg {
+                margin-top: 0.2em;
+            }
+            :last-child{
+                margin-right: 8px;
+            }
+        }
+
+        .btn-resume:hover{
+            cursor: pointer;
+            background: rgba(106, 109, 110, 0.2);
+            /*box-shadow: var(--color-text-dim) 0 0 10px 1px;*/
+        }
     }
 }
 
