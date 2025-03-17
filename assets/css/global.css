@@ -52,6 +52,12 @@ a:active{
     display: none !important;
 }
 
+h3.subtitle {
+    font-size: 1em;
+    color: #85858d;
+    font-family: 'Roboto Mono', monospace;
+}
+
 @media only screen and (max-width: 600px) {
     .no-mobile{
         display: none !important;
