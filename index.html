@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/mainv2.css">
+    <link rel="stylesheet" href="assets/css/aboutv2.css">
 
     <link href="https://fonts.googleapis.com/css2family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
@@ -55,14 +56,22 @@
         <div class="right">
             <section class="my-title">
                 <h1>Jose Britto Saaji</h1>
-                <h2>Software Developer</h2>
+                <h2 class="subtitle">Software Developer</h2>
 
-                <p>Hello there! I am a software developer with a passion for building things that make a difference. Currently pursuing an adv. diploma at George Brown College,
+                <p>
+                    Hello there! I am a software developer with a passion for building things that make a difference. Currently pursuing an advanced diploma at George Brown College,
                     I have experience with building web applications, desktop applications, and games. I am also a huge fan of open source software and have contributed to a few projects.
-                    I am always looking for new opportunities to learn and grow. </p>
+                </p>
             </section>
 
             <section class="socials">
+
+                <!--<button class="btn-resume" onclick="open_url('https://britto.tech/resume.pdf')">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#babac6"><path d="M336-240h288v-72H336v72Zm0-144h288v-72H336v72ZM263.72-96Q234-96 213-117.15T192-168v-624q0-29.7 21.15-50.85Q234.3-864 264-864h312l192 192v504q0 29.7-21.16 50.85Q725.68-96 695.96-96H263.72ZM528-624v-168H264v624h432v-456H528ZM264-792v189-189 624-624Z"/></svg>
+                    </span>
+                    <span>Download Resume</span>
+                </button>-->
                 <a href="https://github.com/JoseBritto/" target="_blank">
                     <i class="lab la-github"></i>
                      <span>Github</span>
@@ -70,14 +79,19 @@
                 <a href="https://www.linkedin.com/in/josebrittosaaji/" target="_blank">
                     <i class="lab la-linkedin"></i>
                     <span>Linkedin</span>
-                </a>
+                </a><!--
                 <a href="https://matrix.to/#/@josebritto:matrix.org" target="_blank">
                     <i class="las la-comments"></i>
                     <span>Matrix</span>
-                </a>
+                </a>-->
                 <a href="mailto:jose@britto.tech">
                     <i class="las la-envelope"></i>
                     <span>Email</span>
+                </a>
+
+                <a href="/resume.pdf" target="_blank">
+                    <i class="la la-download"></i>
+                    <span>Download Resume</span>
                 </a>
             </section>
         </div>
@@ -89,15 +103,38 @@
 </main>
 
 
+<!--<div id="about">
+    <div class="left">
+        <div class="dp">
+            <img height="70" src="assets/img/github-profile.jpg" alt="Jose Britto Saaji">
+        </div>
+    </div>
+    <div class="right">
+        <section class="main-section-title">
+            <h2 class="title">About Me</h2>
+            <h3 class="subtitle">Some things you might want to know about me</h3>
+        </section>
+        <div class="about-content">
+
+            Hello Again, Britto here.
+        </div>
+        &lt;!&ndash;<div class="skills">
+            <a class="skill" href="" target="_blank">
+                <span>C#</span>
+            </a>
+        </div>&ndash;&gt;
+    </div>
+</div>-->
 
 <div id="projects-bg">
     <div id="projects">
         <section class="main-section-title">
             <h2>Projects</h2>
-            <h3>Some awesome projects that I worked on</h3>
+            <h3 class="subtitle">Some awesome projects that I worked on</h3>
         </section>
 
         <div id="projects-display">
+
             <div class="project-card-v2">
                 <div class="preview">
                     <img src="assets/img/denaro-cropped.png" alt="Denaro" height="160">
@@ -144,27 +181,6 @@
 
             <div class="project-card-v2">
                 <div class="preview">
-                    <img src="assets/img/simple-weather.png" alt="Shorty" height="160" style="border-color: #20202A;">
-                </div>
-
-                <div class="text">
-                    <h3>Simple Weather</h3>
-                    <p>A very minimalist weather app built in a few hours</p>
-                </div>
-                <div class="links">
-                    <a href="https://britto.tech/Simple-Weather" target="_blank"> <i class="las la-link"></i> Live Demo</a>
-                     <a href="https://github.com/JoseBritto/Simple-Weather" target="_blank"><i class="lab la-github"></i> Source Code</a>
-                </div>
-
-                <div class="tags">
-                    <span class="tag">React</span>
-                    <span class="tag">HTML</span>
-                    <span class="tag">CSS</span>
-                    <span class="tag">JS</span>
-                </div>
-            </div>
-            <div class="project-card-v2">
-                <div class="preview">
                     <img src="assets/img/cli.png" alt="Shorty" height="160"> <!--style="border: solid 2px #222222; box-shadow: #000000 0 0 4px 2px"-->
                 </div>
 
@@ -182,40 +198,129 @@
                     <span class="tag">CSS</span>
                     <span class="tag">JS</span>
                 </div>
-            </div><!--
+            </div>
+
             <div class="project-card-v2">
                 <div class="preview">
-                    <img src="assets/img/Conways_firework.gif" alt="Shorty" height="160"> &lt;!&ndash;style="border: solid 2px #222222; box-shadow: #000000 0 0 4px 2px"&ndash;&gt;
+                    <img src="assets/img/simple-weather.png" alt="Shorty" height="160" style="border-color: #20202A;">
                 </div>
 
                 <div class="text">
-                    <h3>Game Of Life</h3>
-                    <p>Recreation of the "Game Of Life" by John Conway</p>
+                    <h3>Simple Weather</h3>
+                    <p>A very minimalist weather app built in a few hours</p>
                 </div>
                 <div class="links">
-                    &lt;!&ndash; <a href="https://github.com/JoseBritto/Shorty" target="_blank"><i class="lab la-github"></i> Source Code</a>&ndash;&gt;
-                    <a href="https://github.com/JoseBritto/Game-of-Life" target="_blank"> <i class="lab la-github"></i> View Source Code</a>
+                    <a href="https://britto.tech/Simple-Weather" target="_blank"> <i class="las la-link"></i> Live Demo</a>
+                    <a href="https://github.com/JoseBritto/Simple-Weather" target="_blank"><i class="lab la-github"></i> Source Code</a>
                 </div>
 
                 <div class="tags">
-                    <span class="tag">Unity</span>
-                    <span class="tag">C#</span>
+                    <span class="tag">React</span>
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
                 </div>
-            </div>-->
+            </div>
+
+            <div class="project-card-v2">
+                <div class="preview">
+                    <img src="assets/img/chatty.png" alt="Shorty" height="160"> <!--style="border: solid 2px #222222; box-shadow: #000000 0 0 4px 2px"-->
+                </div>
+
+                <div class="text">
+                    <h3>Chatty</h3>
+                    <p>A websockets based chat application written in pure JS.</p>
+                </div>
+                <div class="links">
+                    <a href="https://labtest1.comp3133.britto.tech/" target="_blank"> <i class="las la-link"></i> Live Demo</a>
+                    <a href="https://github.com/JoseBritto/101416601_lab_test1_chat_app" target="_blank"> <i class="lab la-github"></i>Source Code</a>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JS</span>
+                    <span class="tag">socket.io</span>
+                </div>
+            </div>
+            <div class="project-card-v2">
+                <div class="preview">
+                    <img src="assets/img/payroll.png" alt="Shorty" height="160"> <!--style="border: solid 2px #222222; box-shadow: #000000 0 0 4px 2px"-->
+                </div>
+
+                <div class="text">
+                    <h3>Payroll Manager</h3>
+                    <p>A payroll management desktop application built using JavaFX.</p>
+                </div>
+                <div class="links">
+                   <a href="https://github.com/JoseBritto/HRManagementApp" target="_blank"> <i class="lab la-github"></i>Source Code</a>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">JavaFX</span>
+                </div>
+            </div>
+            <div class="project-card-v2">
+                <div class="preview">
+                    <img src="assets/img/what-pay.png" alt="Shorty" height="160"> <!--style="border: solid 2px #222222; box-shadow: #000000 0 0 4px 2px"-->
+                </div>
+
+                <div class="text">
+                    <h3>What Pay?</h3>
+                    <p>An android app that calculates your pay based on your hourly wage and hours worked.</p>
+                </div>
+                <div class="links">
+                   <a href="https://github.com/JoseBritto/PayCalculator" target="_blank"> <i class="lab la-github"></i>Source Code</a>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Android</span>
+                </div>
+            </div>
+            <div class="project-card-v2">
+                <div class="preview">
+                    <img src="assets/img/Conways_firework.gif" alt="Shorty" height="160"> <!--style="border: solid 2px #222222; box-shadow: #000000 0 0 4px 2px"-->
+                </div>
+
+                <div class="text">
+                    <h3>Conway's Game of Life</h3>
+                    <p>An implementation of the Conway's Game of Life in C# using the Unity Game Engine.</p>
+                </div>
+                <div class="links">
+                   <a href="https://github.com/JoseBritto/Game-of-Life" target="_blank"> <i class="lab la-github"></i>Source Code</a>
+                </div>
+
+                <div class="tags">
+                    <span class="tag">C#</span>
+                    <span class="tag">Unity</span>
+                </div>
+            </div>
 
         </div>
     </div>
 </div>
 
 
-
 <div id="achievements">
     <section class="main-section-title">
-        <h2>Achievements </h2>
-        <h3>A few of my academic achievements</h3>
+        <h2>Academics & Achievements</h2>
+        <h3 class="subtitle">A few of my academic achievements</h3>
     </section>
     <section class="cards">
-        <div class="academic-card" onclick="open_url('https://www.linkedin.com/in/josebrittosaaji/#honors_and_awards')">
+        <div class="academic-card" onclick="open_url('https://www.georgebrown.ca/programs/computer-programming-and-analysis-program-t177/')">
+            <div class="header">
+                <span class="title">
+                    <span>
+                        <i style="font-size: 1.2em; margin-right: 2px; margin-bottom: -3px;" class="la la-school"></i>
+                        Computer Programming & Analysis</span>
+                    </span>
+                </span>
+            </div>
+            <span class="subtitle">Currently pursuing an advanced diploma at George Brown College</span>
+        </div>
+        <div class="academic-card" onclick="open_url('https://www.linkedin.com/in/josebrittosaaji/details/honors/')">
             <div class="header">
                 <span class="title">
                     <span>
@@ -228,7 +333,7 @@
         </div>
 
 
-        <div class="academic-card" onclick="open_url('https://ieeextreme.org/ieeextreme-17-0-ranking/')">
+        <div class="academic-card" onclick="open_url('https://www.linkedin.com/in/josebrittosaaji/details/honors/')">
             <div class="header">
                 <span class="title">
                     <span>
@@ -239,7 +344,7 @@
             </div>
             <span class="subtitle">Ranked <strong>8th</strong> in Canada as a team of three</span>
         </div>
-        <div class="academic-card" onclick="open_url('https://ieeextreme.org/ieeextreme-18/')">
+        <div class="academic-card" onclick="open_url('https://www.linkedin.com/in/josebrittosaaji/details/honors/')">
             <div class="header">
                 <span class="title">
                     <span>
@@ -252,7 +357,6 @@
         </div>
     </section>
 </div>
-
 
 
 <div id="contact">
