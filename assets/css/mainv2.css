@@ -155,7 +155,7 @@ main #scroll-hint {
     align-items: center;
     gap: 10px;
     transition: all 0.1s;
-    animation: scroll-hint-bounce 10s infinite ease-in-out;
+    animation: scroll-hint-bounce 5s infinite ease-in-out;
     color: #4A4E4E;
     &:hover{
         cursor: pointer;
