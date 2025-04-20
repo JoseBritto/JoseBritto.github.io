@@ -204,3 +204,65 @@ main #scroll-hint {
     height: 100%;
     object-fit: cover;
 }
+
+
+@media only screen and (max-width: 600px){
+    .main-card {
+        width: 90%;
+        flex-direction: column;
+        gap: 20px;
+        >.left{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: visible;
+            .dp{
+                width: 50%;
+                aspect-ratio: 1;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        >.right {
+            overflow: visible;
+            width: 100%;
+            padding-top: 0;
+            padding-bottom: 0;
+            height: 300%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            h1 {
+                font-size: 1.5em;
+                text-align: center;
+            }
+            h2 {
+                font-size: 1em;
+                text-align: center;
+            }
+
+            p{
+                height: fit-content;
+                margin: 0;
+            }
+
+            .socials{
+                width: 100%;
+                margin: 24px 0;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+        }
+    }
+}
