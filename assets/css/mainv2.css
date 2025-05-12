@@ -248,12 +248,12 @@ main #scroll-hint {
 
             p{
                 height: fit-content;
-                margin: 0;
+                margin: 2em auto;
             }
 
             .socials{
                 width: 100%;
-                margin: 24px 0;
+                margin: 8px 0;
                 box-sizing: border-box;
                 display: flex;
                 flex-direction: row;
@@ -261,6 +261,9 @@ main #scroll-hint {
                 align-items: center;
                 gap: 15px;
                 flex-wrap: wrap;
+                a {
+                    flex: 1 1 auto;
+                }
             }
 
         }
