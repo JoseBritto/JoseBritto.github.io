@@ -29,7 +29,7 @@
         flex: 1 1 400px;
         border-radius: 16px;
         border: 2px solid var(--color-text-dim);
-        padding: 10px;
+        padding: 1rem;
         margin: 8px;
         display: flex;
         flex-direction: column;
@@ -55,6 +55,8 @@
         color: #85858d;
         font-family: 'Roboto Mono', monospace;
         text-align: center;
+        margin: 0;
+        padding: 1rem;
     }
 }
 
@@ -65,7 +67,7 @@
         }
         .academic-card{
             flex: 1 1 300px;
-            font-size: 0.6em;
+            font-size: 0.8rem;
         }
         .main-section-title{
             margin-left: 0;
