@@ -155,7 +155,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .right-mobile{
     display: none;
-    z-index: 99;
 }
 
 @media only screen and (max-width : 800px) {

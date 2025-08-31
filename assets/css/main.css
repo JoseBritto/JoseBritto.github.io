@@ -8,7 +8,9 @@ main{
     color: var(--text);
     text-align: center;
     min-height: 100vh;
-
+    z-index: 1;
+    position: relative; /*Be careful about stacking contexts: https://www.joshwcomeau.com/css/stacking-contexts/ */
+    animation: reveal-main 2s ease-in-out;
     h1{
         font-size: 4rem;
         font-weight: 800;
@@ -24,10 +26,72 @@ main{
         font-family: 'Noto Color Emoji', sans-serif;
     }
 
-    p{
+    .text{
         font-size: 1rem;
         font-weight: 600;
         margin-top: 2rem;
         opacity: 0.8;
+    }
+
+    .explore{
+        background-color: var(--primary);
+        padding: 0.5rem 3rem;
+        border-radius: 16px;
+        border: none;
+        outline: none;
+        position: absolute;
+        bottom: 10vh;
+        transition: all 0.1s ease-in-out;
+        animation: reveal-main-btn 2.5s ease-in-out;
+        svg{
+            fill: var(--background);
+            scale: 1.2;
+            transition: scale 0.1s ease-in-out;
+        }
+    }
+
+    .explore:hover{
+        border-radius: 6px;
+        cursor: pointer;
+        opacity: 1;
+        svg{
+            scale: 1.4;
+        }
+    }
+}
+
+@media (max-width: 800px){
+    main{
+        h1{
+            font-size: 1.6rem;
+            max-width: 80%;
+        }
+        .text{
+            font-size: 0.8rem;
+            max-width: 90%;
+        }
+    }
+}
+
+@keyframes reveal-main {
+    0%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0.8;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes reveal-main-btn {
+    0%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
     }
 }

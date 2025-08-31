@@ -1,5 +1,6 @@
 header{
     position: fixed;
+    z-index: 80; /*Be careful about stacking contexts: https://www.joshwcomeau.com/css/stacking-contexts/ */
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
