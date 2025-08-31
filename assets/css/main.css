@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap');
+main{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    text-align: center;
+    min-height: 100vh;
+
+    h1{
+        font-size: 4rem;
+        font-weight: 800;
+        letter-spacing: 2px;
+        max-width: 60%;
+    }
+
+    .colored{
+        color: #39bfd0;
+    }
+
+    .emoji{
+        font-family: 'Noto Color Emoji', sans-serif;
+    }
+
+    p{
+        font-size: 1rem;
+        font-weight: 600;
+        margin-top: 2rem;
+        opacity: 0.8;
+    }
+}

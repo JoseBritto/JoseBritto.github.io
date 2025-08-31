@@ -1,0 +1,13 @@
+:root {
+    --black: #000000;
+    --gray: #666666;
+    --white: #ffffff;
+    --off-white: #c3c3c3;
+
+    --background: #1F1F1F;
+    --bg-overlay: #282828;
+    /*
+    --background: #1F1F1F;
+    */
+    --text: #D1CFC0;
+}
