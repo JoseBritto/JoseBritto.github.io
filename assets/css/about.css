@@ -32,6 +32,8 @@
         img{
             border-radius: 10%;
             filter: sepia(5%) hue-rotate(16deg) brightness(80%) contrast(90%);
+            height: 480px;
+            width: 360px;
         }
     }
 
@@ -62,6 +64,7 @@
         .right{
             img{
                 height: 20rem;
+                width: 15rem;
             }
         }
         .left{
@@ -85,6 +88,7 @@
         .right{
             img{
                 height: 20rem;
+                width: 15rem;
             }
         }
         .left{
