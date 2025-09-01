@@ -48,7 +48,7 @@ main{
         position: absolute;
         bottom: 10vh;
         transition: all 0.1s ease-in-out;
-        animation: reveal-main-btn 2.5s ease-in-out;
+        /*animation: reveal-main-btn 1.5s ease-in-out;*/
         svg{
             fill: var(--background);
             scale: 1.2;
@@ -81,7 +81,7 @@ main{
 
 @keyframes reveal-main {
     0%{
-        opacity: 0;
+        opacity: 0.1;
     }
     60%{
         opacity: 0.8;
@@ -92,7 +92,7 @@ main{
 }
 @keyframes reveal-main-btn {
     0%{
-        opacity: 0;
+        opacity: 0.1;
     }
     80%{
         opacity: 0;
@@ -106,10 +106,10 @@ main{
 @keyframes reveal-colored{
     0%{
         transform: translateY(-50px);
-        opacity: 0;
+        opacity: 0.1;
     }
     49%{
-        opacity: 0;
+        opacity: 0.1;
         transform: translateY(-50px);
     }
     50%{
