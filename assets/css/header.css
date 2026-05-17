@@ -76,4 +76,17 @@ header .right{
     header {
         padding: 0.5rem;
     }
+
+    #name{
+        font-size: 1.2rem;
+    }
+    #tagline{
+        font-size: 0.6rem;
+    }
+    header .left img {
+        width: 2.5rem;
+    }
+    header .left{
+        padding: 0.25rem;
+    }
 }
