@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Britto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/hamburger.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <link rel="preload" href="assets/css/about.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="assets/css/about.css"></noscript>
+
+    <link rel="stylesheet" href="assets/css/projects.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="assets/img/profile.avif" alt="Profile Image">
+            <div class="text">
+                <span id="name">Jose Britto Saaji</span>
+                <span id="tagline">Developer. Developer. Developer</span>
+            </div>
+        </div>
+        <div class="right">
+            <nav>
+                <a href="">Projects</a>
+                <a href="">Blog</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+        <div class="right-mobile" id="right-mobile">
+            <nav>
+                <div id="mobile-menu-overlay">
+                    <a href="">Projects</a>
+                    <a href="">Blog</a>
+                    <a href="">About</a>
+                    <a href="">Contact</a>
+                </div>
+                <button id="mobile-menu" class="hamburger hamburger--spin" type="button"
+                        aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+                      <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                      </span>
+                </button>
+            </nav>
+            <script>
+                let menu = document.getElementById('mobile-menu');
+                let overlay = document.getElementById('mobile-menu-overlay');
+                menu.addEventListener('click', () => {
+                    menu.classList.toggle('is-active');
+                    overlay.classList.toggle('is-active');
+                    /* accessibility */
+                    let wasExpanded = menu.getAttribute('aria-expanded');
+                    if (wasExpanded === 'true') {
+                        overlay.classList.add('non-active');
+                        menu.setAttribute('aria-expanded', 'false');
+                    } else {
+                        overlay.classList.remove('non-active');
+                        menu.setAttribute('aria-expanded', 'true');
+                    }
+                })
+                let rightMobile = document.getElementById('right-mobile');
+                window.addEventListener('click', function(e){
+                    if (!rightMobile.contains(e.target) && menu.getAttribute('aria-expanded') === 'true') {
+                        if(menu.classList.contains('is-active')) {
+                            menu.classList.toggle('is-active');
+                            overlay.classList.toggle('is-active');
+                            menu.setAttribute('aria-expanded', 'false');
+                            overlay.classList.add('non-active');
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </header>
+    <main>
+        <h1>Welcome to <span class="colored-container"><span class="colored">Britto's</span></span> tiny space on the interwebs</h1>
+        <span class="text">A fancy place to shamelessly show off my skills.</span>
+        <button id="about-btn" aria-label="Scroll to about section" class="explore">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="24px"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
+        </button>
+
+        <script>
+            let btn = document.getElementById('about-btn');
+            btn.addEventListener('click', () => {
+                window.location.href = "#about";
+            })
+        </script>
+    </main>
+    <section class="about" id="about">
+        <div class="container">
+            <div class="left">
+                <h2>Who am I?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="right">
+                <img height="960" width="720" src="assets/img/me2.webp" alt="A headshot of me">
+            </div>
+        </div>
+
+        <button id="projects-btn" class="explore" onclick="window.location.href = '#projects'">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="24px"><path d="M440-800v487L216-537l-56 57 320 320 320-320-56-57-224 224v-487h-80Z"/></svg>
+        </button>
+    </section>
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="title">
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="tiles">
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="assets/img/web-resources.png" alt="">
+                    </div>
+                    <div class="tile-content">
+                        <p class="project-name">Web Resources</p>
+                        <p class="summary">
+                            An aggregator for tools and websites helpful for artists and gamedevs.
+                            Really useful if work in the game dev industry.
+                            The list of tools is maintained by <a href="https://dj3d.me/"> @DJ_Games </a>
+                            <br>
+                            Contact him if you have any suggestions.
+                        </p>
+                        <div class="buttons">
+                            <button onclick="window.open('https://resources.dj3d.me/', '_blank')">View Project</button>
+                            <button onclick="window.open('https://github.com/JoseBritto/Artist-Web-Resources', '_blank')">Source Code</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="assets/img/shorty.png" alt="">
+                    </div>
+                    <div class="tile-content">
+                        <p class="project-name">Shorty</p>
+                        <p class="summary">
+                            A URL shortener with a beautiful UI and a simple API.
+                            This is one of the very first "design" oriented projects I did. Spent a lot of time back then. Pretty proud of the result!
+                        </p>
+                        <div class="buttons">
+                            <button onclick="window.open('https://shorty.britto.tech/', '_blank')">View Project</button>
+                            <button onclick="window.open('https://github.com/JoseBritto/Shorty', '_blank')">Source Code</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tile">
+                    <div class="tile-img">
+                        <img src="assets/img/cli.png" alt="">
+                    </div>
+                    <div class="tile-content">
+                        <p class="project-name">Retro Cli</p>
+                        <p class="summary">
+                            A retro-inspired terminal interface built from scratch using pure CSS and JavaScript.
+                            Flexed a lot of my CSS muscles on this one.
+                        </p>
+                        <div class="buttons">
+                            <button onclick="window.open('https://cli.britto.tech/', '_blank')">View Project</button>
+                            <button onclick="window.open('https://github.com/JoseBritto/Retro-Cli', '_blank')">Source Code</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
