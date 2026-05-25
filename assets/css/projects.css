@@ -10,23 +10,35 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 90%;
+        margin-top: 6rem;
     }
 
-    h2{
-        text-align: center;
+    .title{
+        align-self: flex-start;
+    }
+
+    .title h2{
+        text-align: left;
         font-size: 3rem;
     }
 
+    .title p {
+        text-align: left;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: rgb(209 207 192 / 0.52);
+    }
+
     .tiles{
+        align-self: flex-end;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
-        width: 100%;
         gap: 2rem;
-        margin-top: 4rem;
+        margin-top: 2rem;
     }
 
     .tile{
@@ -124,5 +136,37 @@
             font-size: 0.9rem;
         }
     }
+}
 
+@media (max-width: 600px) {
+    .projects{
+        h2{
+            font-size: 2rem;
+        }
+        .title{
+            padding-top: 30vh;
+        }
+
+        .tiles{
+            gap: 6rem;
+        }
+
+        .tile{
+            width: 80vw;
+            height: 30rem;
+
+            .project-name{
+                font-size: 1rem;
+                padding: 0.2rem;
+            }
+            .summary{
+                font-size: 0.7rem;
+                opacity: 0.8;
+                padding: 0.2rem;
+            }
+            button{
+                height: 3.5rem;
+            }
+        }
+    }
 }
