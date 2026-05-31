@@ -12,6 +12,7 @@
         justify-content: center;
         width: 90%;
         margin-top: 6rem;
+        position: relative;
     }
 
     .title{
@@ -28,6 +29,13 @@
         font-size: 0.9rem;
         font-weight: 600;
         color: rgb(209 207 192 / 0.52);
+    }
+
+    .decal{
+        position: absolute;
+        z-index: -1;
+        left: -300px;
+        top: 10px;
     }
 
     .tiles{
@@ -52,6 +60,7 @@
         padding: 1rem;
         border-radius: 20px;
         background-color: rgba(209, 207, 192, 0.05);
+       /* background: #282827;*/
         box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
     }
 
