@@ -182,20 +182,26 @@
     </section>
 
     <section class="contact" id="contact">
-        <div class="title">
-            <h2>Get in Touch </h2>
+
+        <div class="decal decal1">
+            <img src="assets/img/contact-phone-2-svgrepo-com.svg" alt="" loading="lazy">
         </div>
-        <form id="contact-form">
-            <label for="message-input">You can reach out to me through <a href="https://www.linkedin.com/in/josebrittosaaji">Linkedin</a>, <a href="https://matrix.to/#/@josebritto:matrix.org">matrix</a>, or <a href="mailto:jose@britto.tech">email</a> . Or, just type whatever you have to say below </label>
-            <textarea placeholder="You are super cool" id="message-input" name="message-input" cols="40" rows="10" required></textarea>
-            <label for="email-input">Now, enter your email here and hit send. I will try to get back to you as soon as I can.</label>
-            <div style="width: 100%">
-                <input placeholder="me@myemail.com" name="email-input" type="email" id="email-input" required>
-                <button id="contact-submit" type="submit">Send <i class="lab la-telegram-plane"></i></button>
+        <div class="container">
+            <div class="title">
+                <h2>Get in Touch </h2>
             </div>
-            <p style="visibility: hidden" id="contact-success-msg">Thanks, Got your message. I'll get back to you as soon as I can.</p>
-            <p style="visibility: hidden" id="contact-error-msg">An error occurred!</p>
-        </form>
+            <form id="contact-form">
+                <label for="message-input">You can reach out to me through <a href="https://www.linkedin.com/in/josebrittosaaji">Linkedin</a>, <a href="https://matrix.to/#/@josebritto:matrix.org">matrix</a>, or <a href="mailto:jose@britto.tech">email</a> . Or, just type whatever you have to say below </label>
+                <textarea placeholder="You are super cool" id="message-input" name="message-input" cols="40" rows="10" required></textarea>
+                <label for="email-input">Now, enter your email here and hit send. I will try to get back to you as soon as I can.</label>
+                <div class="email-submit">
+                    <input placeholder="me@myemail.com" name="email-input" type="email" id="email-input" required>
+                    <button id="contact-submit" type="submit">Send <i class="lab la-telegram-plane"></i></button>
+                </div>
+                <p style="visibility: hidden" id="contact-success-msg">Thanks, Got your message. I'll get back to you as soon as I can.</p>
+                <p style="visibility: hidden" id="contact-error-msg">An error occurred!</p>
+            </form>
+        </div>
     </section>
 
 </body>
