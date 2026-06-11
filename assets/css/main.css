@@ -61,6 +61,7 @@ header .right{
         margin: 0 0.5rem;
         font-weight: 600;
         opacity: 0.8;
+        padding: 1rem 0.25rem;
     }
     a:hover{
         text-decoration: none;
