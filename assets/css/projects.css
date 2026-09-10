@@ -147,7 +147,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     .projects{
         h2{
             font-size: 2rem;
@@ -176,6 +176,14 @@
             button{
                 height: 3.5rem;
             }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .tile {
+        .tile-img{
+            width: 90%;
         }
     }
 }

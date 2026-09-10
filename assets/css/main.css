@@ -164,6 +164,25 @@ main{
     main{
 
         h1{
+            font-size: 2rem;
+            max-width: 80%;
+            margin-top: -25%;
+        }
+        .text{
+            font-size: 0.8rem;
+            max-width: 90%;
+        }
+        .explore{
+            bottom: 4rem;
+        }
+    }
+}
+
+
+@media (max-width: 600px){
+    main{
+
+        h1{
             font-size: 1.8rem;
             max-width: 80%;
             margin-top: -25%;
@@ -173,7 +192,7 @@ main{
             max-width: 90%;
         }
         .explore{
-            bottom: 15vh;
+            bottom: 6rem;
         }
     }
 }
