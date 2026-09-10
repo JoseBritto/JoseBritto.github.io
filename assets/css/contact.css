@@ -5,6 +5,7 @@
     justify-content: center;
     position: relative;
     overflow: clip;
+    min-height: unset;
 
     .container{
         display: flex;
@@ -29,13 +30,6 @@
     .title h2 {
         text-align: left;
         font-size: 3rem;
-    }
-
-    .decal{
-        position: absolute;
-        z-index: -1;
-        right: -300px;
-        top: 100px;
     }
 
 
@@ -88,8 +82,9 @@
             flex: 85;
         }
         button{
-            flex: 15;
+            flex: 25;
             width: 100%;
+            min-width: 2rem;
             height: 3rem;
             border: none;
             background: var(--primary);
@@ -132,5 +127,14 @@
         margin-right: auto;
         margin-left: auto;
         color: #fe5186;
+    }
+}
+
+@media (max-width: 800px) {
+    #contact {
+        form {
+            max-width: unset;
+        }
+
     }
 }
